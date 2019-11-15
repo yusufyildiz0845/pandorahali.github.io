@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <?php
+$iphone = stristr(@$_SERVER['HTTP_USER_AGENT'],"iPhone");
+$android = stristr(@$_SERVER['HTTP_USER_AGENT'],"Android");
+$webos = stristr(@$_SERVER['HTTP_USER_AGENT'],"webOS");
+$bberry = stristr(@$_SERVER['HTTP_USER_AGENT'],"BlackBerry");
+$ipod = stristr(@$_SERVER['HTTP_USER_AGENT'],"iPod");
+if ($iphone || $android || $webos || $ipod || $bberry == true)
+{
+?>
+	<div style="width:300px;position:fixed;top:450px;left: 0px;z-index:99999;font-size:12px;">
+		<a href="https://api.whatsapp.com/send?phone=905551107899">
+			<img style="width:40px;" src="https://demobul.net/images/whatsapp.png" alt="whatsapp">
+		</a>
+	</div>
+<?php }else{?>
+<?php } ?>
+<div class="login-box">
+  <h1>Oturum Ac</h1>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" placeholder="Kullanici Adi">
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input type="password" placeholder="sifreniz">
+  </div>
+<a href="pandora hali/index.html"><input type="button" class="btn" value="oturum aç">
+  </body>
+</html>

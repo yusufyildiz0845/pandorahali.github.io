@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>Pandora Halı | Hoşgeldiniz</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+      <?php
+$iphone = stristr(@$_SERVER['HTTP_USER_AGENT'],"iPhone");
+$android = stristr(@$_SERVER['HTTP_USER_AGENT'],"Android");
+$webos = stristr(@$_SERVER['HTTP_USER_AGENT'],"webOS");
+$bberry = stristr(@$_SERVER['HTTP_USER_AGENT'],"BlackBerry");
+$ipod = stristr(@$_SERVER['HTTP_USER_AGENT'],"iPod");
+if ($iphone || $android || $webos || $ipod || $bberry == true)
+{
+?>
+	<div style="width:300px;position:fixed;top:450px;left: 0px;z-index:99999;font-size:12px;">
+		<a href="https://api.whatsapp.com/send?phone=905551107899">
+			<img style="width:40px;" src="https://demobul.net/images/whatsapp.png" alt="whatsapp">
+		</a>
+	</div>
+<?php }else{?>
+<?php } ?>
+     <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Pandora Halı</span> ltd.şti</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Anasayfa</a></li>
+            <li class="current"><a href="about.html">Hakkımızda</a></li>
+            <li class="current"><a href="services.html">Servis</a></li>
+            <li class="current"><a href="login formu/index1.html">giriş yap</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="newsletter">
+      <div class="container">
+          <button type="submit" class="button_1">Servislerimiz</button>
+        </form>
+      </div>
+    </section>
+    <section id="main">
+      <div class="container">
+	  <button type="button">
+  <a href="tel://+905446436081">+90 123 456 78 90</a>
+<a href="tel://+905446436081"><img src="telefon.jpg"/></a>
+</button>
+<button type="button" a href="tel://+905446436081">
+<a href="index.html">Anasayfa</a>
+<a href="index.html"><img src="img/Anasayfa.png"></a>
+</button>
+<container>
+<form
+  action="https://formspree.io/mpzaekeo"
+  method="POST">
+  <label>
+    <a><font color="#003399">E-mail:</font></a>
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    <font color="#003399">MESAJIN:
+    <textarea name="message"></textarea>
+  </label>
+
+  <!-- your other form fields go here -->
+
+  <button type="submit"><font color="#003399">GÖNDER</font></button>
+</form>
+</container>
+<body>
+  <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  </head>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.631144810879!2d30.707382900000002!3d36.8991714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c38f6839cfcd21%3A0x3780d9dd68092a7e!2sPandora%20hal%C4%B1!5e0!3m2!1str!2str!4v1572714934166!5m2!1str!2str" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+     
+          </div>
+        </aside>
+      </div>
+    </section>
+    <footer>
+      <p>Pandora Halı &copy; 2018</p>
+    </footer>
+  </body>
+</html>
