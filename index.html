@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>Pandora Halı | Hoşgeldiniz</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <?php
+$iphone = stristr(@$_SERVER['HTTP_USER_AGENT'],"iPhone");
+$android = stristr(@$_SERVER['HTTP_USER_AGENT'],"Android");
+$webos = stristr(@$_SERVER['HTTP_USER_AGENT'],"webOS");
+$bberry = stristr(@$_SERVER['HTTP_USER_AGENT'],"BlackBerry");
+$ipod = stristr(@$_SERVER['HTTP_USER_AGENT'],"iPod");
+if ($iphone || $android || $webos || $ipod || $bberry == true)
+{
+?>
+	<div style="width:300px;position:fixed;top:450px;left: 0px;z-index:99999;font-size:12px;">
+		<a href="https://api.whatsapp.com/send?phone=905551107899">
+			<img style="width:40px;" src="https://demobul.net/images/whatsapp.png" alt="whatsapp">
+		</a>
+	</div>
+<?php }else{?>
+<?php } ?>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Pandora Halı</span> ltd.şti</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Anasayfa</a></li>
+            <li class="current"><a href="about.html">Hakkımızda</a></li>
+            <li class="current"><a href="services.html">Servis</a></li>
+            <li class="current"><a href="telefon.html">iletişim</a></li>
+            <li class="current"><a href="index11.html">giriş yap</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1>Antalya/Muratpaşa</h1>
+        <p>Merkezi Satış Yeri</p>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1><font color=" #FF4500">Email adresinizi giriniz</font></h1>
+        <form>
+          <input type="email" placeholder="Enter Email...">
+          <button type="submit" class="button_1">TAMAM</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="./img/logo_html.png">
+          <h3><font color="#FF4500">%100 Yerli Üretim</font></h3>
+          <p><font color="#FF4500">Güler Yüzlü Satış Elemanı</p>
+        </div>
+        <div class="box">
+          <img src="./img/logo_css.png">
+          <h3><font color=" #FF4500">%100 Yerli Üretim</h3>
+          <p><font color="  #FF4500"></font>Güvenilir Alışveriş</p>
+        </div>
+        <div class="box">
+          <img src="./img/logo_brush.png">
+          <h3>%100 GÜVENLİ ALIŞVERİŞ</h3>
+          <p>Para İadesi Bululmamaktadır</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Pandora halı &copy; 2018</p>
+    </footer>
+  </body>
+</html>
